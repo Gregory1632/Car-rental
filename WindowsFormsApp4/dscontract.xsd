@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dscontract" targetNamespace="http://tempuri.org/dscontract.xsd" xmlns:mstns="http://tempuri.org/dscontract.xsd" xmlns="http://tempuri.org/dscontract.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dscontract" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dscontract" msprop:Generator_DataSetName="dscontract">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Cars" msprop:Generator_TableClassName="CarsDataTable" msprop:Generator_TableVarName="tableCars" msprop:Generator_TablePropName="Cars" msprop:Generator_RowDeletingName="CarsRowDeleting" msprop:Generator_RowChangingName="CarsRowChanging" msprop:Generator_RowEvHandlerName="CarsRowChangeEventHandler" msprop:Generator_RowDeletedName="CarsRowDeleted" msprop:Generator_UserTableName="Cars" msprop:Generator_RowChangedName="CarsRowChanged" msprop:Generator_RowEvArgName="CarsRowChangeEvent" msprop:Generator_RowClassName="CarsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="ReturnTime" msprop:Generator_ColumnVarNameInTable="columnReturnTime" msprop:Generator_ColumnPropNameInRow="ReturnTime" msprop:Generator_ColumnPropNameInTable="ReturnTimeColumn" msprop:Generator_UserColumnName="ReturnTime" type="xs:dateTime" />
+              <xs:element name="TimeOfIssue" msprop:Generator_ColumnVarNameInTable="columnTimeOfIssue" msprop:Generator_ColumnPropNameInRow="TimeOfIssue" msprop:Generator_ColumnPropNameInTable="TimeOfIssueColumn" msprop:Generator_UserColumnName="TimeOfIssue" type="xs:dateTime" />
+              <xs:element name="IDClient" msprop:Generator_ColumnVarNameInTable="columnIDClient" msprop:Generator_ColumnPropNameInRow="IDClient" msprop:Generator_ColumnPropNameInTable="IDClientColumn" msprop:Generator_UserColumnName="IDClient" type="xs:int" />
+              <xs:element name="IDEmployees" msprop:Generator_ColumnVarNameInTable="columnIDEmployees" msprop:Generator_ColumnPropNameInRow="IDEmployees" msprop:Generator_ColumnPropNameInTable="IDEmployeesColumn" msprop:Generator_UserColumnName="IDEmployees" type="xs:int" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IDCars" msprop:Generator_ColumnVarNameInTable="columnIDCars" msprop:Generator_ColumnPropNameInRow="IDCars" msprop:Generator_ColumnPropNameInTable="IDCarsColumn" msprop:Generator_UserColumnName="IDCars" type="xs:int" minOccurs="0" />
+              <xs:element name="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_UserColumnName="FullName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr3" msprop:Generator_ColumnVarNameInTable="columnExpr3" msprop:Generator_ColumnPropNameInRow="Expr3" msprop:Generator_ColumnPropNameInTable="Expr3Column" msprop:Generator_UserColumnName="Expr3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CarBrand" msprop:Generator_ColumnVarNameInTable="columnCarBrand" msprop:Generator_ColumnPropNameInRow="CarBrand" msprop:Generator_ColumnPropNameInTable="CarBrandColumn" msprop:Generator_UserColumnName="CarBrand">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Cars" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
